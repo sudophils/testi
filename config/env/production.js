@@ -45,7 +45,8 @@ module.exports = {
      ***************************************************************************/
     default: {
       adapter: require('sails-mongo'),
-      url: 'mongodb://phixlab:1000password@cluster0-nyolj.mongodb.net/test',
+      url:
+        'mongodb://phixlab:1000password@cluster0-nyolj.mongodb.net/test?retryWrites=true&w=majority',
       replicaSet: 'DEVSpeeder-shard-0',
       authSource: 'admin',
       //--------------------------------------------------------------------------
