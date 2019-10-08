@@ -45,7 +45,7 @@ module.exports = {
      ***************************************************************************/
     default: {
       // adapter: 'sails-mysql',
-      // url: 'mysql://user:password@host:port/database',
+      url: 'mysql://user:password@host:port/database',
       //--------------------------------------------------------------------------
       //  /\   To avoid checking it in to version control, you might opt to set
       //  ||   sensitive credentials like `url` using an environment variable.
@@ -134,7 +134,7 @@ module.exports = {
      *                                                                          *
      ***************************************************************************/
     cors: {
-      allowOrigins: ['https://sailsnode.herokuapp.com/']
+      allowOrigins: ['https://sailsnode.herokuapp.com']
     }
   },
 
@@ -224,7 +224,7 @@ module.exports = {
      * > Be sure to use the right protocol!  ("http://" vs. "https://")         *
      *                                                                          *
      ***************************************************************************/
-    onlyAllowOrigins: ['https://sailsnode.herokuapp.com/']
+    onlyAllowOrigins: ['https://sailsnode.herokuapp.com']
     /***************************************************************************
      *                                                                          *
      * If you are deploying a cluster of multiple servers and/or processes,     *
