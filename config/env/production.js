@@ -44,15 +44,14 @@ module.exports = {
      *                                                                          *
      ***************************************************************************/
     default: {
-      adapter: 'sails-mongo',
-      url:
-        'mongodb://phixlab:1000password@cluster0-nyolj.mongodb.net/test?retryWrites=true&w=majority',
+      adapter: require('sails-mongo'),
+      url: 'mongodb://phixlab:1000password@cluster0-nyolj.mongodb.net/test',
       replicaSet: 'DEVSpeeder-shard-0',
       authSource: 'admin',
       //--------------------------------------------------------------------------
       //  /\   To avoid checking it in to version control, you might opt to set
       //  ||   sensitive credentials like `url` using an environment variable.
-      //
+      //?retryWrites=true&w=majority
       //  For example:
       //  ```
       //  sails_datastores__default__url=mysql://admin:myc00lpAssw2D@db.example.com:3306/my_prod_db
