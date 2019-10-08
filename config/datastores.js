@@ -45,7 +45,9 @@ module.exports.datastores = {
      *    (See https://sailsjs.com/config/datastores for help.)                 *
      *                                                                          *
      ***************************************************************************/
-    // adapter: 'sails-mysql',
-    url: 'mysql://user:password@host:port/database'
+    adapter: 'sails-mongo',
+    // url: 'mysql://user:password@host:port/database',
+    url:
+      'mongodb+srv://phixlab:1000password@cluster0-nyolj.mongodb.net/test?retryWrites=true&w=majority'
   }
 };
