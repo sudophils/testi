@@ -45,8 +45,11 @@ module.exports = {
      ***************************************************************************/
     default: {
       adapter: 'sails-mongo',
+      ssl: true,
       url:
-        'mongodb+srv://phixlab:1000password@cluster0-nyolj.mongodb.net/test?retryWrites=true&w=majority',
+        'mongodb://phixlab:1000password@cluster0-nyolj.mongodb.net/test?retryWrites=true&w=majority',
+      replicaSet: 'DEVSpeeder-shard-0',
+      authSource: 'admin'
       //--------------------------------------------------------------------------
       //  /\   To avoid checking it in to version control, you might opt to set
       //  ||   sensitive credentials like `url` using an environment variable.
