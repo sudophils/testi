@@ -9,6 +9,5 @@
  */
 
 module.exports.routes = {
-
-
+  'GET /api/v1/test': { action: 'test/gettest' }
 };
