@@ -47,10 +47,11 @@ module.exports.datastores = {
      ***************************************************************************/
     adapter: 'sails-mongo',
     // url: 'mysql://user:password@host:port/database',
-    ssl: true,
+
     url:
       'mongodb://phixlab:1000password@cluster0-nyolj.mongodb.net/test?retryWrites=true&w=majority',
     replicaSet: 'DEVSpeeder-shard-0',
-    authSource: 'admin'
+    authSource: 'admin',
+    ssl: true
   }
 };
