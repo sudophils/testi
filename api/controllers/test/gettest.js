@@ -1,5 +1,5 @@
 module.exports = async function gettest(req, res) {
-  const { title, body } = req.params();
+  const { title, body } = req.allParams();
 
   const data = {
     title,
